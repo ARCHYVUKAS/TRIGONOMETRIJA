@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<title>Trigonometria</title>
 
+<style>
+.answer {
+    display: none;
+    color: green;
+}
+</style>
+
+<script>
+function rodyti(id) {
+    var el = document.getElementById(id);
+
+    if (el.style.display === "block") {
+        el.style.display = "none";
+    } else {
+        el.style.display = "block";
+    }
+}
+</script>
+
+</head>
+<body>
+
+<h2>Trigonometrija</h2>
+
+<p>sin(α) = priešpriešinė / įžambinė</p>
+<p>cos(α) = prigludusioji / įžambinė</p>
+<p>tan(α) = priešpriešinė / prigludusioji</p>
+
+<hr>
+
+<p>1. Rask sin(30°)</p>
+<button onclick="rodyti('a1')">Atsakymas</button>
+<p id="a1" class="answer">0.5</p>
+
+<p>2. Rask cos(60°)</p>
+<button onclick="rodyti('a2')">Atsakymas</button>
+<p id="a2" class="answer">0.5</p>
+
+<p>3. Rask tan(45°)</p>
+<button onclick="rodyti('a3')">Atsakymas</button>
+<p id="a3" class="answer">1</p>
+
+</body>
+</html>
